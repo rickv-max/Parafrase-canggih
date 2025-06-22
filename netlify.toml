@@ -1,0 +1,12 @@
+[build]
+  # Direktori tempat file frontend Anda (index.html) berada
+  publish = "public"
+
+[functions]
+  # Direktori tempat file backend Anda (paraphrase.js) berada
+  directory = "api"
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
